@@ -17,6 +17,15 @@ class ModuleOptions extends BaseModuleOptions
     protected $enableDefaultEntities = true;
 
     /**
+     * @var string
+     */
+    protected $identityColumn = "email";
+    /**
+     * @var string
+     */
+    protected $credentialColumn = "password";
+
+    /**
      * @param boolean $enableDefaultEntities
      */
     public function setEnableDefaultEntities($enableDefaultEntities)
@@ -33,4 +42,38 @@ class ModuleOptions extends BaseModuleOptions
     {
         return $this->enableDefaultEntities;
     }
+
+    /**
+     * @return string
+     */
+    public function getCredentialColumn()
+    {
+        return $this->credentialColumn;
+    }
+
+    /**
+     * @param string $credentialColumn
+     */
+    public function setCredentialColumn($credentialColumn)
+    {
+        $this->credentialColumn = $credentialColumn;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIdentityColumn()
+    {
+        return $this->identityColumn;
+    }
+
+    /**
+     * @param string $identityColumn
+     */
+    public function setIdentityColumn($identityColumn)
+    {
+        $this->identityColumn = $identityColumn;
+    }
+
+
 }
