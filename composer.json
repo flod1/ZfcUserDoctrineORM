@@ -1,12 +1,12 @@
 {
-    "name": "flod1/zfc-user-doctrine-orm",
+    "name": "zf-commons/zfc-user-doctrine-orm",
     "description": "Doctrine2 ORM storage adapter for ZfcUser.",
     "type": "library",
     "license": "BSD-3-Clause",
     "keywords": [
         "zf2"
     ],
-    "homepage": "https://github.com/ZF-Commons/ZfcUserDoctrineORM",
+    "homepage": "https://github.com/flod1/ZfcUserDoctrineORM",
     "authors": [
         {
             "name": "Evan Coury",
